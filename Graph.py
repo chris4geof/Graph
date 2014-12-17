@@ -108,7 +108,7 @@ e2 = Edge(Node("ABC"), Node("BAC"))
 e3 = Edge(Node("BAC"), Node("BCA"))
 e5 = Edge(Node("CAB"), Node("CBA"))
 
-#g.addEdge(e1)
+#g.addEdge(e1) Tester
 #g.addEdge(e2)
 #g.addEdge(e3)
 #g.addEdge(e5)
