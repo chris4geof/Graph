@@ -41,11 +41,6 @@ class Digraph(object):
         src = edge.getSource()
         dest = edge.getDestination()
         print(edge)
-        for i, j in enumerate(self.nodes):
-            print(i, j, end = ' ')
-        #for key in self.edges.items():
-        #    print(key, end = '  ')
-        print('NAMES', src.getName(), dest.getName())
         if src not in self.nodes or dest not in self.nodes:
             raise ValueError('Node not in graph')
         self.edges[src].append(dest)
@@ -108,10 +103,10 @@ g.addNode(n6)
 
 g.addEdge(Edge(n1, n2))
 
-#e1 = Edge(Node("ABC"), Node("ACB"))
-#e2 = Edge(Node("ABC"), Node("BAC"))
-#e3 = Edge(Node("BAC"), Node("BCA"))
-#e5 = Edge(Node("CAB"), Node("CBA"))
+e1 = Edge(Node("ABC"), Node("ACB"))
+e2 = Edge(Node("ABC"), Node("BAC"))
+e3 = Edge(Node("BAC"), Node("BCA"))
+e5 = Edge(Node("CAB"), Node("CBA"))
 
 #g.addEdge(e1)
 #g.addEdge(e2)
